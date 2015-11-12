@@ -111,7 +111,7 @@ We now plot the daily activity plot, however this time with *ggplot* and conditi
 
 ```{r}
 library(ggplot2)
-q <- qplot(interval,steps,data=df2,geom = "line", stat="summary", fun.y = "mean",facets = . ~ wkdayend)
+q <- qplot(interval,steps,data=df2,geom = "line", stat="summary", fun.y = "mean",facets = wkdayend ~ .)
 q + theme_classic()
 ```
 
